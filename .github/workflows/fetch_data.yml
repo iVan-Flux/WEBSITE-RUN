@@ -2,8 +2,10 @@ name: Generate and Sync ivan-web to Dual Cloudflare KV
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # প্রতি ৫ মিনিটে রান হবে
-  workflow_dispatch:      # ম্যানুয়ালি রান করার জন্য
+    - cron: '*/5 * * * *' # প্রতি ৫ মিনিটে অটো রান হবে
+  workflow_dispatch:      # গিটহাব থেকে ম্যানুয়ালি রান করার জন্য
+  repository_dispatch:    # ক্রন-জব ওয়েবসাইট থেকে এপিআই ট্রিগারের জন্য
+    types: [manual_push]
 
 jobs:
   build_and_sync:
@@ -23,16 +25,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install firebase-admin
 
-      # ধাপ ১: ফায়ারবেস থেকে ডাটা নিয়ে ivan-web.json জেনারেট করা
+      #  ফায়ারবেস থেকে ডাটা নিয়ে ivan-web.json জেনারেট করা
       - name: Run Data Generator
         env:
           FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: python main.py
 
-      # ধাপ ২: ১ম ক্লাউডফ্লেয়ার আপলোড ও পার্জ (ফেইল করলেও রানার ২য় ধাপে চলে যাবে)
+      #  ১ম ক্লাউডফ্লেয়ার আপলোড ও পার্জ (ফেইল করলেও রানার ২য় ধাপে চলে যাবে)
       - name: Sync & Purge Cloudflare 1
-        continue-on-error: true # এই লাইনটি ১ম অ্যাকাউন্ট ফেইল করলেও কাজ সচল রাখবে
+        continue-on-error: true # ১ম অ্যাকাউন্ট ফেইল করলেও কাজ সচল রাখবে
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID_1 }}
           CF_KV_NAMESPACE_ID: ${{ secrets.CF_KV_NAMESPACE_ID_1 }}
@@ -77,9 +79,9 @@ jobs:
             exit 1
           fi
 
-      # ধাপ ৩: ২য় ক্লাউডফ্লেয়ার আপলোড ও পার্জ (১ম অ্যাকাউন্ট ফেইল করলেও এটি রান হবে)
+      #  ২য় ক্লাউডফ্লেয়ার আপলোড ও পার্জ (১ম অ্যাকাউন্ট ফেইল করলেও এটি রান হবে)
       - name: Sync & Purge Cloudflare 2
-        continue-on-error: true # এই লাইনটি ২য় অ্যাকাউন্ট ফেইল করলেও পুরো জব সচল রাখবে
+        continue-on-error: true # ২য় অ্যাকাউন্ট ফেইল করলেও পুরো জব সচল রাখবে
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID_2 }}
           CF_KV_NAMESPACE_ID: ${{ secrets.CF_KV_NAMESPACE_ID_2 }}
