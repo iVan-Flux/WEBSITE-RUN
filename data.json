@@ -3,16 +3,16 @@
     "AUTHOR": "iVan_FluX",
     "CONTACT (OWNER)": "https://t.me/iVan_flux",
     "TELEGRAM CHANNEL": "https://t.me/api_hub_by_ivan",
-    "Last update time": "12:33:59 PM 30-06-2026",
+    "Last update time": "12:41:51 PM 30-06-2026",
     "Live": "00",
     "Upcoming": "01",
     "Finish": "00",
     "events": [
         {
-            "id": null,
+            "id": 1,
             "title": null,
             "image": null,
-            "cat": null,
+            "cat": "Cricket",
             "eventInfo": {
                 "teamA": null,
                 "teamB": null,
@@ -22,7 +22,7 @@
                 "isHot": "0",
                 "Status": "Upcoming",
                 "startTime": null,
-                "endTime": null
+                "endTime": ""
             },
             "channels_data": []
         }
