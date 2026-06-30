@@ -16,44 +16,39 @@ if not firebase_admin._apps:
     })
 
 def fetch_and_save():
-    ref = db.reference('/')
-    data = ref.get()
+    # সরাসরি sports_live/events পাথ থেকে ডেটা রিড করা হচ্ছে
+    ref = db.reference('/sports_live/events')
+    raw_events = ref.get()
 
-    # ডাটাবেজ থেকে ডাটা লিস্ট নাকি ডিকশনারি তা চেক করে ইভেন্টগুলো আলাদা করা হচ্ছে
-    raw_events = []
-    if isinstance(data, dict):
-        if 'events' in data:
-            raw_events = data['events']
-        elif 'matches' in data:
-            raw_events = data['matches']
-        else:
-            raw_events = list(data.values())
-    elif isinstance(data, list):
-        raw_events = data
+    # ডাটাবেজে কোনো ডেটা না থাকলে খালি লিস্ট ধরা হবে
+    if not raw_events:
+        raw_events = []
+    # ডাটাবেজ ডিকশনারি ফরম্যাটে থাকলে তা সিরিয়াল অনুযায়ী ০, ১, ২ সাজানো হচ্ছে
+    elif isinstance(raw_events, dict):
+        sorted_keys = sorted(raw_events.keys(), key=lambda x: int(x) if x.isdigit() else x)
+        raw_events = [raw_events[k] for k in sorted_keys]
 
     events_list = []
     live_count = 0
     upcoming_count = 0
     finish_count = 0
 
-    for index, item in enumerate(raw_events):
+    # প্রতিটি ইভেন্ট পর পর রিড করে সাজানো হচ্ছে
+    for item in raw_events:
         if not isinstance(item, dict):
             continue
 
-        # ডাটাবেজ স্ট্রাকচার ফ্ল্যাট বা নেস্টেড যাই হোক না কেন, তা হ্যান্ডেল করার জন্য সাহায্যকারী ফাংশন
-        event_info_nested = item.get("eventInfo", {}) if isinstance(item.get("eventInfo"), dict) else {}
+        # ইভেন্টের মূল তথ্যগুলো নেওয়া হচ্ছে
+        event_id = item.get("id")
+        title = item.get("title")
+        league_logo = item.get("league_logo")  # আপনার নির্দেশনা অনুযায়ী league_logo অপরিবর্তিত রাখা হলো
+        cat = item.get("cat")
+        
+        # eventInfo নোড রিড করা হচ্ছে
+        event_info = item.get("eventInfo", {})
+        status = str(event_info.get("Status", "Upcoming")).strip()
 
-        def get_val(key, default=None):
-            # প্রথমে ফ্ল্যাট কি চেক করবে, না পেলে নেস্টেড eventInfo চেক করবে
-            val = item.get(key)
-            if val is None:
-                val = event_info_nested.get(key)
-            return val if val is not None else default
-
-        # স্ট্যাটাস এবং টাইম সংক্রান্ত ডাটা
-        status = str(get_val("Status") or get_val("status") or "Upcoming").strip()
-
-        # স্ট্যাটাস কাউন্ট নির্ধারণ করা
+        # স্ট্যাটাস কাউন্ট
         if status.lower() == "live":
             live_count += 1
         elif status.lower() == "upcoming":
@@ -61,33 +56,33 @@ def fetch_and_save():
         elif status.lower() in ["finish", "finished", "ended"]:
             finish_count += 1
 
-        # ডাটাবেজের প্রকৃত মানগুলোকে আপনার দেওয়া নির্দিষ্ট ফরম্যাটে সাজানো হচ্ছে
+        # ফাইনাল আউটপুটের জন্য প্রতিটি ইভেন্টের কাঠামো
         mapped_event = {
-            "id": get_val("id") or get_val("match_id") or (index + 1),
-            "title": get_val("title") or get_val("match_title") or get_val("name"),
-            "image": get_val("image") or get_val("logo") or get_val("tournament_logo"),
-            "cat": get_val("cat") or get_val("category") or get_val("sport") or "Cricket",
+            "id": event_id,
+            "title": title,
+            "league_logo": league_logo,
+            "cat": cat,
             "eventInfo": {
-                "teamA": get_val("teamA") or get_val("team_a") or get_val("home"),
-                "teamB": get_val("teamB") or get_val("team_b") or get_val("away"),
-                "teamAFlag": get_val("teamAFlag") or get_val("team_a_flag") or get_val("home_flag"),
-                "teamBFlag": get_val("teamBFlag") or get_val("team_b_flag") or get_val("away_flag"),
-                "eventName": get_val("eventName") or get_val("league") or get_val("tournament") or get_val("title"),
-                "isHot": str(get_val("isHot") or "0"),
+                "teamA": event_info.get("teamA"),
+                "teamB": event_info.get("teamB"),
+                "teamAFlag": event_info.get("teamAFlag"),
+                "teamBFlag": event_info.get("teamBFlag"),
+                "eventName": event_info.get("eventName"),
+                "isHot": str(event_info.get("isHot", "0")),
                 "Status": status,
-                "startTime": get_val("startTime") or get_val("start_time") or get_val("time"),
-                "endTime": get_val("endTime") or get_val("end_time") or ""
+                "startTime": event_info.get("startTime"),
+                "endTime": event_info.get("endTime")
             },
-            "channels_data": item.get("channels_data") or item.get("channels") or item.get("links") or []
+            "channels_data": item.get("channels_data", [])
         }
         events_list.append(mapped_event)
 
-    # সময় নির্ধারণ (বাংলাদেশ সময়/UTC+6)
+    # সময় আপডেট (বাংলাদেশ সময়/UTC+6)
     utc_now = datetime.now(timezone.utc)
     local_time = utc_now + timedelta(hours=6)
     last_update_time = local_time.strftime("%I:%M:%S %p %d-%m-%Y")
 
-    # আপনার সুনির্দিষ্ট আউটপুট কাঠামো
+    # চূড়ান্ত ফাইল স্ট্রাকচার
     final_output = {
         "NAME": "FluX-oW Live event ( Auto updated)",
         "AUTHOR": "iVan_FluX",
@@ -104,7 +99,7 @@ def fetch_and_save():
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_output, f, indent=4, ensure_ascii=False)
         
-    print("Success: data.json created with dynamic mapping")
+    print("Success: data.json created with correct database path")
 
 if __name__ == "__main__":
     fetch_and_save()
