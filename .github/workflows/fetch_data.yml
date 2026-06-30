@@ -30,8 +30,9 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: python main.py
 
-      # ধাপ ২: ১ম ক্লাউডফ্লেয়ার KV-তে আপলোড ও পার্জ (ivan-web কী-তে সেভ হবে)
+      # ধাপ ২: ১ম ক্লাউডফ্লেয়ার আপলোড ও পার্জ (ফেইল করলেও রানার ২য় ধাপে চলে যাবে)
       - name: Sync & Purge Cloudflare 1
+        continue-on-error: true # এই লাইনটি ১ম অ্যাকাউন্ট ফেইল করলেও কাজ সচল রাখবে
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID_1 }}
           CF_KV_NAMESPACE_ID: ${{ secrets.CF_KV_NAMESPACE_ID_1 }}
@@ -63,6 +64,7 @@ jobs:
                 else
                   echo "Failed to purge cache on Cloudflare 1. HTTP: $purge_response"
                   cat purge_response.json
+                  exit 1
                 fi
               fi
             else
@@ -75,8 +77,9 @@ jobs:
             exit 1
           fi
 
-      # ধাপ ৩: ২য় ক্লাউডফ্লেয়ার KV-তে আপলোড ও পার্জ
+      # ধাপ ৩: ২য় ক্লাউডফ্লেয়ার আপলোড ও পার্জ (১ম অ্যাকাউন্ট ফেইল করলেও এটি রান হবে)
       - name: Sync & Purge Cloudflare 2
+        continue-on-error: true # এই লাইনটি ২য় অ্যাকাউন্ট ফেইল করলেও পুরো জব সচল রাখবে
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID_2 }}
           CF_KV_NAMESPACE_ID: ${{ secrets.CF_KV_NAMESPACE_ID_2 }}
@@ -108,6 +111,7 @@ jobs:
                 else
                   echo "Failed to purge cache on Cloudflare 2. HTTP: $purge_response"
                   cat purge_response.json
+                  exit 1
                 fi
               fi
             else
