@@ -20,11 +20,10 @@ def fetch_and_save():
     ref = db.reference('/sports_live/events')
     raw_events = ref.get()
 
-    # ডাটাবেজে কোনো ডেটা না থাকলে খালি লিস্ট ধরা হবে
     if not raw_events:
         raw_events = []
-    # ডাটাবেজ ডিকশনারি ফরম্যাটে থাকলে তা সিরিয়াল অনুযায়ী ০, ১, ২ সাজানো হচ্ছে
     elif isinstance(raw_events, dict):
+        # কি-গুলো সর্ট করে লিস্টে রূপান্তর
         sorted_keys = sorted(raw_events.keys(), key=lambda x: int(x) if x.isdigit() else x)
         raw_events = [raw_events[k] for k in sorted_keys]
 
@@ -33,30 +32,20 @@ def fetch_and_save():
     upcoming_count = 0
     finish_count = 0
 
-    # প্রতিটি ইভেন্ট পর পর রিড করে সাজানো হচ্ছে
+    # প্রতিটি ইভেন্ট রিড করে সাজানো হচ্ছে
     for item in raw_events:
         if not isinstance(item, dict):
             continue
 
-        # ইভেন্টের মূল তথ্যগুলো নেওয়া হচ্ছে
         event_id = item.get("id")
         title = item.get("title")
-        league_logo = item.get("league_logo")  # আপনার নির্দেশনা অনুযায়ী league_logo অপরিবর্তিত রাখা হলো
+        league_logo = item.get("league_logo")  # league_logo অপরিবর্তিত রাখা হলো
         cat = item.get("cat")
         
-        # eventInfo নোড রিড করা হচ্ছে
         event_info = item.get("eventInfo", {})
         status = str(event_info.get("Status", "Upcoming")).strip()
 
-        # স্ট্যাটাস কাউন্ট
-        if status.lower() == "live":
-            live_count += 1
-        elif status.lower() == "upcoming":
-            upcoming_count += 1
-        elif status.lower() in ["finish", "finished", "ended"]:
-            finish_count += 1
-
-        # ফাইনাল আউটপুটের জন্য প্রতিটি ইভেন্টের কাঠামো
+        # চূড়ান্ত তালিকায় পাঠানোর জন্য অবজেক্ট ম্যাপ করা হচ্ছে
         mapped_event = {
             "id": event_id,
             "title": title,
@@ -77,12 +66,43 @@ def fetch_and_save():
         }
         events_list.append(mapped_event)
 
-    # সময় আপডেট (বাংলাদেশ সময়/UTC+6)
+    # সর্টিং লজিক: Live (১ম) -> Upcoming (২য়) -> Finish (৩য়) এবং প্রতি ক্যাটাগরিতে সময়ের ক্রমানুসারে সাজানো
+    def get_sort_key(event):
+        status = event["eventInfo"]["Status"].lower()
+        if status == "live":
+            status_order = 0
+        elif status == "upcoming":
+            status_order = 1
+        elif status in ["finish", "finished", "ended"]:
+            status_order = 2
+        else:
+            status_order = 3  # অন্য কোনো স্ট্যাটাস থাকলে তা শেষে যাবে
+            
+        start_time_str = event["eventInfo"]["startTime"]
+        if not start_time_str:
+            start_time_str = "9999/12/31 23:59:59 +0000"  # সময় না থাকলে তা শেষে দেখাবে
+            
+        return (status_order, start_time_str)
+
+    # সম্পূর্ণ তালিকাটি সর্ট করা হচ্ছে
+    events_list.sort(key=get_sort_key)
+
+    # সর্ট হওয়া চূড়ান্ত তালিকা থেকে কাউন্টারগুলো নির্ভুলভাবে পুনরায় গণনা করা হচ্ছে
+    for event in events_list:
+        status = event["eventInfo"]["Status"].lower()
+        if status == "live":
+            live_count += 1
+        elif status == "upcoming":
+            upcoming_count += 1
+        elif status in ["finish", "finished", "ended"]:
+            finish_count += 1
+
+    # ভারতীয় সময় নির্ধারণ (IST - UTC+5:30)
     utc_now = datetime.now(timezone.utc)
-    local_time = utc_now + timedelta(hours=6)
+    local_time = utc_now + timedelta(hours=5, minutes=30)
     last_update_time = local_time.strftime("%I:%M:%S %p %d-%m-%Y")
 
-    # চূড়ান্ত ফাইল স্ট্রাকচার
+    # চূড়ান্ত আউটপুট জেনারেট
     final_output = {
         "NAME": "FluX-oW Live event ( Auto updated)",
         "AUTHOR": "iVan_FluX",
@@ -95,11 +115,11 @@ def fetch_and_save():
         "events": events_list
     }
 
-    # 'data.json' ফাইলে রাইট করা হচ্ছে
+    # ফাইল সংরক্ষণ
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_output, f, indent=4, ensure_ascii=False)
         
-    print("Success: data.json created with correct database path")
+    print("Success: data.json updated and sorted")
 
 if __name__ == "__main__":
     fetch_and_save()
