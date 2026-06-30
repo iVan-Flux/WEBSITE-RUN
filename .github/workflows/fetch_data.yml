@@ -1,0 +1,38 @@
+name: Fetch Firebase Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # এটি প্রতি ৬ ঘণ্টা পর পর রান হবে
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Python Script
+      env:
+        FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      run: python fetch_data.py
+
+    - name: Commit and Push JSON File
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add data.json
+        git diff-index --quiet HEAD || git commit -m "Update data.json"
+        git push
