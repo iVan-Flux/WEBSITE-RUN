@@ -1,0 +1,1235 @@
+{
+    "sports_live": {
+        "events": [
+            {
+                "cat": "Cricket",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/07/01 21:00:00 +0000",
+                    "eventName": "T20 International",
+                    "isHot": "0",
+                    "startTime": "2026/07/01 16:30:00 +0000",
+                    "teamA": "ENG",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/187757/image",
+                    "teamB": "IND",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/187765/image"
+                },
+                "id": 1534,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11191/image/dark",
+                "title": "T20 International"
+            },
+            {
+                "cat": "Boxing",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 04:00:00 +0000",
+                    "eventName": "Monday Night RAW",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 00:00:00 +0000",
+                    "teamA": "WWE RAW",
+                    "teamAFlag": "https://i.ibb.co/Hmg2K3Q/20260310-201809.png",
+                    "teamB": "WWE RAW",
+                    "teamBFlag": "https://i.ibb.co/Hmg2K3Q/20260310-201809.png"
+                },
+                "id": 73,
+                "league_logo": "https://i.ibb.co/4R6j8XK0/WWE-Logo-svg.png",
+                "title": "Monday Night RAW"
+            },
+            {
+                "cat": "Boxing",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/07/01 04:00:00 +0000",
+                    "eventName": "WWE NXT",
+                    "isHot": "0",
+                    "startTime": "2026/07/01 00:00:00 +0000",
+                    "teamA": "WWE NXT",
+                    "teamAFlag": "https://i.ibb.co/jPMHTs55/20260310-202452.png",
+                    "teamB": "WWE NXT",
+                    "teamBFlag": "https://i.ibb.co/jPMHTs55/20260310-202452.png"
+                },
+                "id": 72,
+                "league_logo": "https://i.ibb.co/4R6j8XK0/WWE-Logo-svg.png",
+                "title": "WWE NXT"
+            },
+            {
+                "cat": "Boxing",
+                "channels_data": [
+                    {
+                        "api": "daa8ea92553fd16cd6bfae2b8c582715:4042e041b5639b79b69ae07a872eef9b",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3n6slkgh54/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd"
+                    },
+                    {
+                        "api": "9f327d24c66fbd84e15ab5c9ead7c7a4:83837185529c0c4048f81386c2d36426",
+                        "title": "SERVER 2",
+                        "type": "drm",
+                        "url": "https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/fdx74zqzhu/out/v1/7d7a8c6981a842b98a683e9fbfe51d17/cenc.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/07/02 04:00:00 +0000",
+                    "eventName": "AEW Dynamite",
+                    "isHot": "0",
+                    "startTime": "2026/07/02 00:00:00 +0000",
+                    "teamA": "AEW",
+                    "teamAFlag": "https://i.ibb.co/sdQb8WBx/20260310-203106.png",
+                    "teamB": "AEW",
+                    "teamBFlag": "https://i.ibb.co/sdQb8WBx/20260310-203106.png"
+                },
+                "id": 74,
+                "league_logo": "https://i.ibb.co/jPLdK3bM/aewlogo24b.png",
+                "title": "AEW Dynamite"
+            },
+            {
+                "cat": "Boxing",
+                "channels_data": [
+                    {
+                        "api": "58551b13211b37d5b325d67e5c6cabef:3b4c3f8b4236fc57d66cdb54a606fe41",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://g001-sle-us-cmaf-prd-ak.pcdn03.cssott.com/Content/CMAF_OS1-CTR-4s-v2/Live/channel(12010340-12010340-4445585a62764)/master_2hr.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/07/04 04:00:00 +0000",
+                    "eventName": "Friday Night SmackDown",
+                    "isHot": "0",
+                    "startTime": "2026/07/04 00:00:00 +0000",
+                    "teamA": "SmackDown",
+                    "teamAFlag": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzZP7kZVz8XPUsapkhsNd-oO8yjHbAA2NXMRuEDPXZteAJRwIeIAUQo5U_6QA4mhPqXAeR5YPVY-Yu5hBVZcOIfWUUFvewgaC2bFmrSLu10iQgvBiLpB0vxEWz320Par_JDjKzTdCYYTcsA4dLb-TjD1fsXvMwGsb6XahN-Pq2ZsexcSsBITIxzXFRYEM/s1600/1000009833.jpg",
+                    "teamB": "SmackDown",
+                    "teamBFlag": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzZP7kZVz8XPUsapkhsNd-oO8yjHbAA2NXMRuEDPXZteAJRwIeIAUQo5U_6QA4mhPqXAeR5YPVY-Yu5hBVZcOIfWUUFvewgaC2bFmrSLu10iQgvBiLpB0vxEWz320Par_JDjKzTdCYYTcsA4dLb-TjD1fsXvMwGsb6XahN-Pq2ZsexcSsBITIxzXFRYEM/s1600/1000009833.jpg"
+                },
+                "id": 213,
+                "league_logo": "https://www.wwe.com/f/styles/wwe_show_logo_l/public/all/2024/09/Smackdown_LOGO--c8e0b09904cb1356d309a8ea2acb0422.png",
+                "title": "Friday Night SmackDown"
+            },
+            {
+                "cat": "Football",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "http://193.47.62.47/hls/CZzsss.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://602.sman1asjap.my.id/tsn.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "http://193.47.62.59/hls/CZzsss.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 4",
+                        "type": "Direct",
+                        "url": "http://193.47.62.51/hls/CZzsss.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 5",
+                        "type": "Direct",
+                        "url": "http://193.47.62.55/hls/CZzsss.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 6",
+                        "type": "Direct",
+                        "url": "http://193.47.62.42/hls/CZzsss.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 7",
+                        "type": "Direct",
+                        "url": "https://602.sman1asjap.my.id/foxalt.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 8",
+                        "type": "Direct",
+                        "url": "https://602.elugohome.com/fox.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 9",
+                        "type": "Direct",
+                        "url": "https://daffodil.sman1asjap.my.id/tele.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 10",
+                        "type": "Direct",
+                        "url": "https://602.elugohome.com/bein.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 03:20:00 +0000",
+                    "eventName": "FIFA World Cup",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 01:00:00 +0000",
+                    "teamA": "Netherlands",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/4705/image",
+                    "teamB": "Morocco",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/4778/image"
+                },
+                "id": 1539,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/16/image/dark",
+                "title": "FIFA World Cup"
+            },
+            {
+                "cat": "Football",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/24SDAZFcsqnj24.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/eJmauBDCIf.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streams.center"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 23:20:00 +0000",
+                    "eventName": "FIFA World Cup",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 21:00:00 +0000",
+                    "teamA": "France",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/4481/image",
+                    "teamB": "Sweden",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/4688/image"
+                },
+                "id": 1563,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/16/image/dark",
+                "title": "FIFA World Cup"
+            },
+            {
+                "cat": "Football",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/24SDAZFcsqnj24.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/eJmauBDCIf.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streams.center"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/07/01 03:20:00 +0000",
+                    "eventName": "FIFA World Cup",
+                    "isHot": "0",
+                    "startTime": "2026/07/01 01:00:00 +0000",
+                    "teamA": "Mexico",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/4781/image",
+                    "teamB": "Ecuador",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/4757/image"
+                },
+                "id": 1564,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/16/image/dark",
+                "title": "FIFA World Cup"
+            },
+            {
+                "cat": "Football",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 19:20:00 +0000",
+                    "eventName": "FIFA World Cup",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 17:00:00 +0000",
+                    "teamA": "Côte d'Ivoire",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/4768/image",
+                    "teamB": "Norway",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/4475/image"
+                },
+                "id": 1565,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/16/image/dark",
+                "title": "FIFA World Cup"
+            },
+            {
+                "cat": "Cricket",
+                "channels_data": [
+                    {
+                        "api": "f4b0b555d938bed11fafd401a2407fec:f3f4819ed521a697f591d6a581864c65",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash-sd/enc/ic5kff3x48/out/v1/e7ab1233faa241588177f356a039e7e3/cenc-sd.mpd"
+                    },
+                    {
+                        "api": "f4b0b555d938bed11fafd401a2407fec:f3f4819ed521a697f591d6a581864c65",
+                        "title": "SERVER 2",
+                        "type": "drm",
+                        "url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/ic5kff3x48/out/v1/e7ab1233faa241588177f356a039e7e3/cenc-sd.mpd"
+                    },
+                    {
+                        "api": "570c19f1be3410e4e409be4dc7923f2b:9a4dea8af2a2a703dffa8a477e9edc50",
+                        "title": "SERVER 3",
+                        "type": "drm",
+                        "url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/65ldy4ejuu/out/v1/69bc6b64f1c14e36bb21e0075a71d8ca/cenc.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/07/03 23:30:00 +0000",
+                    "eventName": "Sobers-Tissera Trophy",
+                    "isHot": "0",
+                    "startTime": "2026/07/03 14:00:00 +0000",
+                    "teamA": "WI",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/187760/image",
+                    "teamB": "SL",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/187756/image"
+                },
+                "id": 1347,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/33863/image/dark",
+                "title": "Sobers-Tissera Trophy"
+            },
+            {
+                "cat": "Cricket",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 18:00:00 +0000",
+                    "eventName": "ICC Women World Twenty20",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 13:30:00 +0000",
+                    "teamA": "AUS-W",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/213117/image",
+                    "teamB": "WI-W",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/213120/image"
+                },
+                "id": 1566,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11183/image/dark",
+                "title": "ICC Women World Twenty20"
+            },
+            {
+                "cat": "Cricket",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/07/02 06:00:00 +0000",
+                    "eventName": "Major League Cricket",
+                    "isHot": "0",
+                    "startTime": "2026/07/02 01:30:00 +0000",
+                    "teamA": "LAKR",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/485011/image",
+                    "teamB": "WF",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/485015/image"
+                },
+                "id": 1567,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/20583/image/dark",
+                "title": "Major League Cricket"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "http://193.47.62.42/hls/TOOOQQQQQQ.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/hefbafbakx28.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb11.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 04:40:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 01:40:00 +0000",
+                    "teamA": "Athletics",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3645/image",
+                    "teamB": "Dodgers",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3638/image"
+                },
+                "id": 1568,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "http://193.47.62.42/hls/TOOOQQQQQ.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/hfzljfahzcax29.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb13.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 04:40:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 01:40:00 +0000",
+                    "teamA": "Diamondbacks",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3640/image",
+                    "teamB": "Giants",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3634/image"
+                },
+                "id": 1569,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://chatgpt.hereisman.net/playlist/7602093856/load-playlist.m3u8|Referer=https://gooz.aapmains.net"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/ijfnakfidch22.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb7.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 02:40:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 23:40:00 +0000",
+                    "teamA": "Brewers",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3630/image",
+                    "teamB": "Reds",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3633/image"
+                },
+                "id": 1570,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://chatgpt.hereisman.net/playlist/7602071232/load-playlist.m3u8|Referer=https://gooz.aapmains.net"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/bzagLHzach19.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.sman1asjap.my.id/mlb4.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 02:07:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 23:07:00 +0000",
+                    "teamA": "Blue Jays",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3642/image",
+                    "teamB": "Mets",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3629/image"
+                },
+                "id": 1571,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/dzjhkfazbka26.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb10.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 03:40:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 00:40:00 +0000",
+                    "teamA": "Rockies",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3628/image",
+                    "teamB": "Marlins",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3639/image"
+                },
+                "id": 1572,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/kjhfzua25.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb9.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 03:10:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 00:10:00 +0000",
+                    "teamA": "Astros",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3655/image",
+                    "teamB": "Twins",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3649/image"
+                },
+                "id": 1573,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://chatgpt.hereisman.net/playlist/7602059920/load-playlist.m3u8|Referer=https://gooz.aapmains.net"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/16yuitzaerghbhc16.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb2.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 01:40:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 22:40:00 +0000",
+                    "teamA": "Phillies",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3635/image",
+                    "teamB": "Pirates",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3637/image"
+                },
+                "id": 1574,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://chatgpt.hereisman.net/playlist/7602054264/load-playlist.m3u8|Referer=https://gooz.aapmains.net"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/ihfazugfyjcazich17.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb6.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 02:10:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 23:10:00 +0000",
+                    "teamA": "Guardians",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3650/image",
+                    "teamB": "Rangers",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3647/image"
+                },
+                "id": 1575,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://chatgpt.hereisman.net/playlist/7602048608/load-playlist.m3u8|Referer=https://gooz.aapmains.net"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/dazhfiach15.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 01:35:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 22:35:00 +0000",
+                    "teamA": "Orioles",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3652/image",
+                    "teamB": "White Sox",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3644/image"
+                },
+                "id": 1576,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://chatgpt.hereisman.net/playlist/7602076888/load-playlist.m3u8|Referer=https://gooz.aapmains.net"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/jkzahzadach20.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb5.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 02:10:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 23:10:00 +0000",
+                    "teamA": "Red Sox",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3646/image",
+                    "teamB": "Nationals",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/5930/image"
+                },
+                "id": 1577,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://chatgpt.hereisman.net/playlist/7602065576/load-playlist.m3u8|Referer=https://gooz.aapmains.net"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/Czajafjihafch18.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb3.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 02:05:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 23:05:00 +0000",
+                    "teamA": "Yankees",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3654/image",
+                    "teamB": "Tigers",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3648/image"
+                },
+                "id": 1578,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "http://193.47.62.42/hls/TOOOQQ.m3u8|referer=http://www.fawanews.sc/"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/fskjanach24.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb8.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 03:05:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 00:05:00 +0000",
+                    "teamA": "Cubs",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3627/image",
+                    "teamB": "Padres",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/3636/image"
+                },
+                "id": 1579,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Baseball",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://edgestreams.pro/hls/jzabfazkbf27.m3u8|Referer=https://streams.center"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/mlb12.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 04:40:00 +0000",
+                    "eventName": "MLB",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 01:40:00 +0000",
+                    "teamA": "Mariners",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/3641/image",
+                    "teamB": "Angels",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/5929/image"
+                },
+                "id": 1580,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11205/image/dark",
+                "title": "MLB"
+            },
+            {
+                "cat": "Cricket",
+                "channels_data": [
+                    {
+                        "api": "0bfd72dcc317a46b442c5eb3f293aac6:1aca7da5cd5e6246829716334feec5c7",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/hv0umqrko2/out/v1/9ccf0d5b729a4c88a42de20bbfa0d875/cenc.mpd"
+                    },
+                    {
+                        "api": "0bfd72dcc317a46b442c5eb3f293aac6:1aca7da5cd5e6246829716334feec5c7",
+                        "title": "SERVER 2",
+                        "type": "drm",
+                        "url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/hv0umqrko2/out/v1/9ccf0d5b729a4c88a42de20bbfa0d875/cenc.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/29 19:30:00 +0000",
+                    "eventName": "Crowe-Thorpe Trophy",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 10:00:00 +0000",
+                    "teamA": "ENG",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/187757/image",
+                    "teamB": "NZ",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/187755/image"
+                },
+                "id": 984,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/24317/image/dark",
+                "title": "Crowe-Thorpe Trophy"
+            },
+            {
+                "cat": "Cricket",
+                "channels_data": [
+                    {
+                        "api": "709c812e1b4174002605df1d17d34a4c:0bbee6c9c20a0f065bf8369d54cbf83e",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/qddnwqthpp/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/30 16:30:00 +0000",
+                    "eventName": "Test Series",
+                    "isHot": "0",
+                    "startTime": "2026/06/30 07:30:00 +0000",
+                    "teamA": "ZIM",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/187745/image",
+                    "teamB": "BAN",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/187744/image"
+                },
+                "id": 1562,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/11189/image/dark",
+                "title": "Test Series"
+            },
+            {
+                "cat": "Motorsport",
+                "channels_data": [
+                    {
+                        "api": "7e9239c1982d984a002df3ed049d0756:1b8a17598129a3618535c8fb05f103fe",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://otte.cache.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd"
+                    },
+                    {
+                        "api": "609d795905904705028ef54653019af7:2c791eb611e57a7d7f203022bc1b9ba3",
+                        "title": "SERVER 2",
+                        "type": "drm",
+                        "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd"
+                    },
+                    {
+                        "api": "2fbdaa3bea0d0323ae011b318d1db716:8726ef7eaf5b9dce15fb6aa9f80bd53f",
+                        "title": "SERVER 3",
+                        "type": "drm",
+                        "url": "https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/oboxe53wyo/out/v1/f7892a9d706d419a846d738fa22ea33e/cenc.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "  +0000",
+                    "eventName": "Formula 1",
+                    "isHot": "0",
+                    "startTime": "2026/07/03 10:00:00 +0000",
+                    "teamA": "Formula 1",
+                    "teamAFlag": "https://cdn-icons-png.flaticon.com/512/2418/2418779.png",
+                    "teamB": "Formula 1",
+                    "teamBFlag": "https://cdn-icons-png.flaticon.com/512/2418/2418779.png"
+                },
+                "id": 170,
+                "league_logo": "https://cdn-icons-png.flaticon.com/512/2418/2418779.png",
+                "title": "Formula 1"
+            },
+            {
+                "cat": "Motorsport",
+                "channels_data": [
+                    {
+                        "api": "065051b99bf5cf8d9a3bde5cbde6aaf9:214bd176832872339ce184338320f9a2",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://otte.cache.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/inpyms8ezu/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd"
+                    },
+                    {
+                        "api": "7eea72d6075245a99ee3255603d58853:6848ef60575579bf4d415db1032153ed",
+                        "title": "SERVER 2",
+                        "type": "drm",
+                        "url": "https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_spotv2hd.mpd"
+                    },
+                    {
+                        "api": "5689304538fa9f3bb3da99c939a2ad4f:6907c88ed8ebdd35a2fa80b9684715e1",
+                        "title": "SERVER 3",
+                        "type": "drm",
+                        "url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/v8g0dlo4z8/out/v1/946019f85dc64ae99ff9ce64a9727a62/cenc-sd.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "  +0000",
+                    "eventName": "MotoGP",
+                    "isHot": "0",
+                    "startTime": "2026/07/10 08:45:00 +0000",
+                    "teamA": "MotoGP",
+                    "teamAFlag": "https://i.ibb.co/6chYXnTd/mgpp.png",
+                    "teamB": "MotoGP",
+                    "teamBFlag": "https://i.ibb.co/6chYXnTd/mgpp.png"
+                },
+                "id": 171,
+                "league_logo": "https://i.ibb.co/6chYXnTd/mgpp.png",
+                "title": "MotoGP"
+            },
+            {
+                "cat": "Motorsport",
+                "channels_data": [
+                    {
+                        "api": "1d96ab366bbe6451edf7407b58e2fa16:0116201f4a63ac5bf5787d2c610c41a7",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/5sxuux529k/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "  +0000",
+                    "eventName": "WRC Rally",
+                    "isHot": "0",
+                    "startTime": "2026/05/28 10:00:00 +0000",
+                    "teamA": "WRC",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/category/84/image",
+                    "teamB": "WRC",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/category/84/image"
+                },
+                "id": 212,
+                "league_logo": "https://img.sofascore.com/api/v1/category/84/image",
+                "title": "WRC Rally"
+            },
+            {
+                "cat": "Boxing",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/04/12 04:00:00 +0000",
+                    "eventName": "TNA iMPACT",
+                    "isHot": "0",
+                    "startTime": "2026/04/11 23:00:00 +0000",
+                    "teamA": "TNA iMPACT",
+                    "teamAFlag": "https://i.ibb.co/RkFszNyM/20260313-082317.png",
+                    "teamB": "TNA iMPACT",
+                    "teamBFlag": "https://i.ibb.co/RkFszNyM/20260313-082317.png"
+                },
+                "id": 175,
+                "league_logo": "https://i.ibb.co/Vcc1vf2y/TNA-Impact-2024.png",
+                "title": "TNA iMPACT"
+            },
+            {
+                "cat": "Boxing",
+                "channels_data": [
+                    {
+                        "api": "308006101c8fd0262c0f529319b9c127:37683aadc75b1450efa82d62c647984d",
+                        "title": "SERVER 1",
+                        "type": "drm",
+                        "url": "https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/kkfdbi2d1c/out/v1/a5b9b32dafd5499688240287ef8c9b90/cenc.mpd"
+                    },
+                    {
+                        "api": "60dc08aae52f4c0b806a8e43f24a12c8:30d5b579966d822b215ec51a91d8a271",
+                        "title": "SERVER 2",
+                        "type": "drm",
+                        "url": "https://tglmp02.akamaized.net/out/v1/3170252e3fb0453085f2f4b0f8401a6b/manifest.mpd"
+                    },
+                    {
+                        "api": "a6b967afcb974bb5a549377b4f09befd:87d993257a099324ccd0215475fc61a0",
+                        "title": "SERVER 3",
+                        "type": "drm",
+                        "url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561402/index.mpd"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "  +0000",
+                    "eventName": "One Friday Fights",
+                    "isHot": "0",
+                    "startTime": "2026/07/03 12:30:00 +0000",
+                    "teamA": "One Friday Fights",
+                    "teamAFlag": "https://i.ibb.co/qfjhxpT/20260313-084834.png",
+                    "teamB": "One Friday Fights",
+                    "teamBFlag": "https://i.ibb.co/qfjhxpT/20260313-084834.png"
+                },
+                "id": 176,
+                "league_logo": "https://iili.io/FDjaT1R.md.png",
+                "title": "One Friday Fights"
+            },
+            {
+                "cat": "Football",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://602.elugohome.com/tsn.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://602.elugohome.com/foxalt.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/fox.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 4",
+                        "type": "Direct",
+                        "url": "https://daffodil.pingbash.com/tele.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 5",
+                        "type": "Direct",
+                        "url": "https://602.sman1asjap.my.id/bein.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/29 19:50:00 +0000",
+                    "eventName": "FIFA World Cup",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 17:00:00 +0000",
+                    "teamA": "Brazil",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/4748/image",
+                    "teamB": "Japan",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/4770/image"
+                },
+                "id": 1538,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/16/image/dark",
+                "title": "FIFA World Cup"
+            },
+            {
+                "cat": "Football",
+                "channels_data": [
+                    {
+                        "api": "",
+                        "title": "SERVER 1",
+                        "type": "Direct",
+                        "url": "https://pull.niues.live/live/stream-9912060_lsd.m3u8?auth_key=1782770722-0-0-dcc7563654812d3d2e63f53b70000291"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 2",
+                        "type": "Direct",
+                        "url": "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1782770722-0-0-48f1e5f6d9e4a23744cf00fd6c7fda5e"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 3",
+                        "type": "Direct",
+                        "url": "https://602.elugohome.com/tsn.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 4",
+                        "type": "Direct",
+                        "url": "https://live.bongtv.com/live/2268990-1-dn1m1ghl09l9moe.m3u8?txSecret=b9706856fd984c062c19616015c4decc&txTime=6A4386FC"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 5",
+                        "type": "Direct",
+                        "url": "https://hls.lauthaitv.cc/live/ger-par-wc-cat/index.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 6",
+                        "type": "Direct",
+                        "url": "https://flv.lauthaitv.cc/live/ger-par-wc-cat.flv"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 7",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/foxalt.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 8",
+                        "type": "Direct",
+                        "url": "https://602.formaturamaxi.com.br/fox.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 9",
+                        "type": "Direct",
+                        "url": "https://daffodil.sman1asjap.my.id/tele.m3u8"
+                    },
+                    {
+                        "api": "",
+                        "title": "SERVER 10",
+                        "type": "Direct",
+                        "url": "https://602.elugohome.com/bein.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/29 23:30:00 +0000",
+                    "eventName": "FIFA World Cup",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 20:30:00 +0000",
+                    "teamA": "Germany",
+                    "teamAFlag": "https://img.sofascore.com/api/v1/team/4711/image",
+                    "teamB": "Paraguay",
+                    "teamBFlag": "https://img.sofascore.com/api/v1/team/4789/image"
+                },
+                "id": 1540,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/16/image/dark",
+                "title": "FIFA World Cup"
+            },
+            {
+                "cat": "Tennis",
+                "channels_data": [
+                    {
+                        "key": "",
+                        "title": "ivan-flux",
+                        "type": "",
+                        "url": "https://file.genoads.com/ch1.m3u8"
+                    }
+                ],
+                "eventInfo": {
+                    "Status": "Upcoming",
+                    "endTime": "2026/06/29 13:00:00 +0000",
+                    "eventName": "Wimbledon",
+                    "isHot": "0",
+                    "startTime": "2026/06/29 10:00:00 +0000",
+                    "teamA": "Wimbledon",
+                    "teamAFlag": "http://api.sofascore.com/api/v1/unique-tournament/2361/image/dark",
+                    "teamB": "Wimbledon",
+                    "teamBFlag": "http://api.sofascore.com/api/v1/unique-tournament/2361/image/dark"
+                },
+                "id": 1581,
+                "league_logo": "http://api.sofascore.com/api/v1/unique-tournament/2361/image/dark",
+                "title": "Wimbledon"
+            }
+        ]
+    }
+}
